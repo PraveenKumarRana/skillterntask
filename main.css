@@ -1,0 +1,70 @@
+.body-container{
+    background-image: url("33195909430_70d023ea43_o.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+.left-side{
+    width: 50%;
+    padding: 2.5%;
+}
+.left-side > h1{
+    padding: 5px;
+    font-size: 0.5in;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.right-side{
+    width: 40%;
+}
+
+.right-side > form{
+    padding: 15%;
+    background-color: rgba(133, 116, 114, 0.7);
+}
+
+.form-control, .btn-block{
+    margin: 20px auto;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+@media only screen and (max-width:600px){
+    .row-container{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 600px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding-top: 10%;
+        padding-left: 2%;
+        padding-right: 2%;
+        align-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .left-side, .right-side{
+        width: 95%;
+        padding: 5px;
+    }
+
+    .right-side > form{
+        background-color: rgba(133, 116, 114, 0.7);
+    }
+}
